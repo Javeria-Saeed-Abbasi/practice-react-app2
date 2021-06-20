@@ -1,0 +1,21 @@
+.main-div{
+    display:flex; 
+    flex-direction:row;
+}
+.sec-1{
+    background-color: aqua;
+    float: left;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    
+}
+.sec-2{
+    background-color:burlywood ;
+    float: right;
+    width: 50%;
+    height: auto;
+    text-align: center;
+
+
+}

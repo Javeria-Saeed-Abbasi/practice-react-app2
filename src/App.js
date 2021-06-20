@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Message from './components/Message.js';
+import style from './components/css/style.css';
+import header from './components/header.js';
 
-function App() {
+function Counter() {
+        let [count, setcount] = useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-div">
+      <header/>
+      <div className="sec-1">
+          <h1>Counter</h1>
+          <Message counter={count} />
+          <br/>
+          <button onClick={()=> setcount(++count)}> Update Counter</button>
+      </div>
+      <div className="sec-2">
+          <h1> lighting</h1>
+      </div>
     </div>
+   
+    
+    
   );
 }
 
-export default App;
+export default Counter;
