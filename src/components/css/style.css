@@ -1,6 +1,14 @@
-.main-div{
-    display:flex; 
-    flex-direction:row;
+.header{
+    background-color: rgb(10, 10, 10);
+    height: auto;
+    text-align: center;
+}
+.header h1{
+    color: rgb(255, 255, 255);
+    padding: 15px;
+}
+.time{
+    color: blanchedalmond;
 }
 .sec-1{
     background-color: aqua;
@@ -8,7 +16,28 @@
     width: 50%;
     height: auto;
     text-align: center;
+    flex-direction:row;
     
+}
+.updbtn{
+    background-color: black;
+    color: wheat;
+    padding:15px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: transparent;
+    font-weight:bold;
+}
+
+.restbtn{
+    background-color: black;
+    color: wheat;
+    padding:15px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: transparent;
+    font-weight:bold;
+    margin-left: 5px;
 }
 .sec-2{
     background-color:burlywood ;
@@ -16,6 +45,14 @@
     width: 50%;
     height: auto;
     text-align: center;
-
+    flex-direction:row;
+}
+.day{
+    background-color: rgb(230, 199, 29);
+}
+.Night{
+    background-color: rgb(35, 35, 73);
+    color: cornsilk;
 
 }
+
