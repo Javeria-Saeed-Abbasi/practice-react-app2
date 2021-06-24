@@ -28,7 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Install NodeJS
         uses: actions/setup-node@v2-beta
-          with:
+        with:
               node-version: 14 
       - uses: borales/actions-yarn@v2.0.0
         with:
