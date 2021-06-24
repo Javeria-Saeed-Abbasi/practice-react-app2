@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import style from './components/css/style.css';
-import Header from './components/Header.js';
+import Header from './components/HeaderTS.js'
 import Message from './components/Message.js';
 // import Day   from './components/Day.js';
 import sunImg from './images/sun3.gif';
