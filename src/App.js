@@ -10,10 +10,10 @@ import moonImg from './images/moon3.gif';
 
 function App() {
         let [count, setcount] = useState(0); 
-        let [isMorning, setMorning] = useState(false)
+        let [isMorning, setMorning] = useState(false);
 
-        let sunImg = <img className="sun" src="sunImg" alt="Sun Image" />
-        let moonImg = <img className="moon" src="moonImg" alt="Moon Image" />
+        // let sunImg =(<img className="sun" src={sunImg} alt="Sun Image" />)
+        // let moonImg = (<img className="moon" src={moonImg} alt="Moon Image" />)
   return (
     <div className="main-div">
       
@@ -41,7 +41,9 @@ function App() {
               <button className="daybtn" onClick={()=> setMorning(!isMorning)}>Update Day</button>
             <div className={`day ${isMorning ? "Morning" : "Night"}`}>
               <span><h1>Good {isMorning ? "Morning" : "Night"}! </h1></span>
-              {isMorning ? sunImg : moonImg}
+              {/* <img src={isMorning ? sunImg : moonImg}  /> */}
+              <img className="sun" src={isMorning ? sunImg : moonImg} alt="Sun Image" />
+              
            </div>
 
           </div>
