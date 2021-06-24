@@ -6,6 +6,7 @@ function Header(){
     let [time, setTime] = useState(getTime());
 
     function getTime() {
+        const d ="";
         let currentTime = new Date();
         return{
           hours: currentTime.getHours(),
