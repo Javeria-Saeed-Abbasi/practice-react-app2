@@ -24,7 +24,7 @@ function Header(){
             <h3 className="time">
             Current Time : {hours === 0 ? 12 : hours > 12 ? `0${hours - 12}` : hours < 10 ? `0${hours}` : hours} : {
             minutes <= 9 ? `0${minutes}` : minutes} : {
-            seconds <= 9 ? `0${seconds}` : seconds} {ampm}
+            seconds <= 9 ? `0${seconds}` : seconds} {ampm} 
         </h3>
 
         </div>
